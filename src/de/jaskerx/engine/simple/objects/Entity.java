@@ -23,7 +23,16 @@ public abstract class Entity {
 	
 	public abstract void draw(Graphics2D g2d);
 	
-
+	
+	public void setNumAttribute(int index, int value) {
+		numAttributes[index] = value;
+	}
+	
+	public void setTextAttribute(int index, String value) {
+		textAttributes[index] = value;
+	}
+	
+	
 	public int getWidth() {
 		return width;
 	}
